@@ -1,5 +1,5 @@
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -78,7 +78,6 @@ TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 
 # Radio
 BOARD_PROVIDES_LIBRIL := true
-TARGET_RIL_VARIANT := caf
 
 # Recovery
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../$(COMMON_PATH)/recovery/recovery_keys.c
