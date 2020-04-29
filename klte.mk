@@ -1,6 +1,7 @@
 #
 # Copyright (C) 2014-2016 The CyanogenMod Project
 # Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2020 AospExtended Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-aosp
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
@@ -48,10 +49,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Doze
 PRODUCT_PACKAGES += \
     SamsungDoze
-
-# FlipFlap
-PRODUCT_PACKAGES += \
-    FlipFlap
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
